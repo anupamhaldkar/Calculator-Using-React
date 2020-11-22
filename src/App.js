@@ -28,6 +28,10 @@ class App extends Component {
     this.setState({current: this.state.current+symbol});
    }
   }
+
+  calculate = (symbol) => {
+    
+  }
   render(){
     const buttons = [
       {symbol: 'C', cols: 3, action:this.reset},
@@ -46,7 +50,7 @@ class App extends Component {
       {symbol: '+', cols: 1, action:this.addToCurrent},
       {symbol: '0', cols: 2, action:this.addToCurrent},
       {symbol: '.', cols: 1, action:this.addToCurrent},
-      {symbol: '=', cols: 1, action:this.addToCurrent},
+      {symbol: '=', cols: 1, action:this.calculate},
     ];
 
     return (
